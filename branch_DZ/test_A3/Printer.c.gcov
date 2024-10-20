@@ -1,0 +1,13 @@
+        -:    0:Source:Printer.c
+        -:    0:Graph:./Printer.gcno
+        -:    0:Data:./Printer.gcda
+        -:    0:Runs:4
+        -:    1:#include "Printer.h"
+        -:    2:
+        4:    3:void Printer(FILE *f, int a[], size_t n)
+        -:    4:{
+        4:    5:    size_t i = 0;
+       23:    6:    while (i < n)
+       19:    7:        fprintf(f, "%d ", a[i++]);
+        4:    8:    fprintf(f, "\n");
+        4:    9:}

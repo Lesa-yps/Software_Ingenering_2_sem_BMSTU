@@ -1,0 +1,2 @@
+func_tests/data/pos_03_out_h.txt
+10 1 2 3 -4 5 -2 7 89 10 0

@@ -1,0 +1,2 @@
+Input count: Input numders:
+2 4 5 3 1 

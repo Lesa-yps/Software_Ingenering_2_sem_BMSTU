@@ -1,0 +1,63 @@
+        -:    0:Source:Reader.c
+        -:    0:Graph:./Reader.gcno
+        -:    0:Data:./Reader.gcda
+        -:    0:Runs:14
+        -:    1:#include "Reader.h"
+        -:    2:
+       34:    3:int Reader(FILE *f, int a[], size_t *n)
+        -:    4:{
+       34:    5:    int rc = OK;
+       34:    6:    int flag = 0;
+       34:    7:    int minus = 1;
+        -:    8:    long int save;
+        -:    9:    char c;
+       34:   10:    *n = 0;
+      207:   11:    while (fscanf(f, "%c", &c) == 1 && c != '\n')
+        -:   12:    {
+      178:   13:        if (feof(f))
+    #####:   14:            break;
+      178:   15:        if (c >= '0' && c <= '9')
+        -:   16:        {
+       99:   17:            if ((*n) == MAX_LEN)
+        -:   18:            {
+        1:   19:                rc = TOO_MUCH_NUMS;
+        1:   20:                break;
+        -:   21:            }
+       98:   22:            if (! flag)
+        -:   23:            {
+       73:   24:                flag = 1;
+       73:   25:                a[*n] = 0;
+        -:   26:            }
+       98:   27:            save = ((long int)a[*n]) * 10 + c - '0';
+       98:   28:            if (save > MAX_X)
+        -:   29:            {
+        2:   30:                rc = NUM_TOO_BIG;
+        2:   31:                break;
+        -:   32:            }
+       96:   33:            a[*n] = save;
+        -:   34:        }
+       79:   35:        else if (c == '-' && flag == 0)
+       12:   36:            minus = - minus;
+       67:   37:        else if (isspace(c))
+        -:   38:        {
+       64:   39:            if (flag)
+        -:   40:            {
+       54:   41:                a[*n] *= minus;
+       54:   42:                minus = 1;
+       54:   43:                flag = 0;
+       54:   44:                (*n)++;
+        -:   45:            }
+        -:   46:        }
+        3:   47:        else if (c != '+')
+        -:   48:        {
+        2:   49:            rc = NOT_INT;
+        2:   50:            break;
+        -:   51:        }
+        -:   52:    }
+       34:   53:    if (flag)
+        -:   54:    {
+       19:   55:        a[*n] *= minus;
+       19:   56:        (*n)++;
+        -:   57:    }
+       34:   58:    return rc;
+        -:   59:}

@@ -1,0 +1,94 @@
+        -:    0:Source:main.c
+        -:    0:Graph:./main.gcno
+        -:    0:Data:./main.gcda
+        -:    0:Runs:18
+        -:    1:#include <stdio.h>
+        -:    2:#include <stddef.h>
+        -:    3:
+        -:    4:#include "const.h"
+        -:    5:#include "Reader.h"
+        -:    6:#include "Sorter.h"
+        -:    7:#include "Printer.h"
+        -:    8:
+        -:    9:/**
+        -:   10: * @brief The main function of the program.
+        -:   11: *
+        -:   12: * @param argc The number of command-line arguments passed to the program.
+        -:   13: * @param argv An array of strings containing the command-line arguments passed to the program.
+        -:   14: *
+        -:   15: * @return An integer representing the exit status of the program.
+        -:   16: */
+        -:   17:
+       18:   18:int main(int argc, char** argv)
+        -:   19:{
+        -:   20:    int a[MAX_LEN];
+        -:   21:    size_t n;
+        -:   22:    int x;
+        -:   23:    int rc;
+        -:   24:    FILE *f;
+        -:   25:    FILE *f_out;
+       18:   26:    int first = 0;
+       18:   27:    if (argc < NUM_OUT_FILE + 1)
+        -:   28:    {
+    #####:   29:        printf("Not enouth files\n");
+    #####:   30:        rc = NOT_ENOUTH_FILES;
+        -:   31:    }
+        -:   32:    else
+        -:   33:    {
+       18:   34:        f = fopen(argv[NUM_IN_FILE], "r");
+       18:   35:        if (f == NULL)
+        -:   36:        {
+        2:   37:            printf("Input file is not exist\n");
+        2:   38:            rc = EXIST1_ERROR;
+        -:   39:        }
+        -:   40:        else
+        -:   41:        {
+       16:   42:            f_out = fopen(argv[NUM_OUT_FILE], "w");
+       16:   43:            if (f_out == NULL)
+        -:   44:            {
+    #####:   45:                printf("Error with open output file\n");
+    #####:   46:                rc = EXIST2_ERROR;
+        -:   47:            }
+        -:   48:            else
+        -:   49:            {
+       16:   50:                fscanf(f, "%d", &x);
+       16:   51:                if (feof(f) != 0)
+        -:   52:                {
+        1:   53:                    printf("File is empty\n");
+        1:   54:                    rc = FILE_EMPTY;
+        -:   55:                }
+        -:   56:                else
+        -:   57:                {
+       15:   58:                    fseek(f, 0, SEEK_SET);
+        -:   59:                    do
+        -:   60:                    {
+       49:   61:                        rc = Reader(f, a, &n);
+       49:   62:                        first += 1;
+       49:   63:                        if (rc != OK)
+        -:   64:                        {
+        5:   65:                            if (rc == NOT_INT && feof(f) == 0)
+        2:   66:                                printf("Uncorrect file\n");
+        3:   67:                            else if (rc == NUM_TOO_BIG)
+        2:   68:                                printf("Too big numbers in file\n");
+        1:   69:                            else if (rc == TOO_MUCH_NUMS)
+        1:   70:                                printf("Too long strings in file\n");
+    #####:   71:                            else if (rc == ERR_N && feof(f) == 0)
+    #####:   72:                                printf("Error with scanf count of numbers\n");
+        5:   73:                            break;
+        -:   74:                        }
+        -:   75:                        else
+        -:   76:                        {
+       44:   77:                            Sorter(a, n);
+       44:   78:                            Printer(f_out, a, n);
+        -:   79:                        }
+       44:   80:                    } while (feof(f) == 0);
+       15:   81:                fclose(f_out);
+        -:   82:                }
+       16:   83:            fclose(f);
+        -:   84:            }
+        -:   85:        }
+        -:   86:    }
+      18*:   87:    if (first == 1 && rc == OK && n == 0)
+    #####:   88:        rc = EMPTY;
+       18:   89:    return rc;
+        -:   90:}

@@ -1,0 +1,27 @@
+        -:    0:Source:Sort_max.c
+        -:    0:Graph:./Sort_max.gcno
+        -:    0:Data:./Sort_max.gcda
+        -:    0:Runs:5
+        -:    1:#include "Sort_max.h"
+        -:    2:
+        5:    3:void Sort_max(int a[], size_t n)
+        -:    4:{
+        5:    5:    size_t i = 0;
+        -:    6:    size_t j;
+        -:    7:    int m;
+       24:    8:    while (i < (n - 1))
+        -:    9:    {
+       19:   10:        j = i + 1;
+       87:   11:        while (j < n)
+        -:   12:        {
+       68:   13:            if (a[j] < a[i])
+        -:   14:            {
+       25:   15:                m = a[i];
+       25:   16:                a[i] = a[j];
+       25:   17:                a[j] = m;
+        -:   18:            }
+       68:   19:            j++;
+        -:   20:        }
+       19:   21:        i++;
+        -:   22:    }
+        5:   23:}

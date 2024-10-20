@@ -1,0 +1,156 @@
+\hypertarget{const_8h}{}\doxysection{const.\+h File Reference}
+\label{const_8h}\index{const.h@{const.h}}
+
+
+Store constants.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{const_8h_a2b7cf2a3641be7b89138615764d60ba3}{E\+M\+P\+TY}}~-\/2
+\item 
+\#define \mbox{\hyperlink{const_8h_acd4a2dee55f5359c0389baab37c2f468}{W\+H\+E\+RE}}~111
+\item 
+\#define \mbox{\hyperlink{const_8h_aabf4f709c8199e41cf279c77112345fe}{M\+A\+X\+\_\+\+L\+EN}}~10
+\item 
+\#define \mbox{\hyperlink{const_8h_a99ebb918c3bae39d675f4d82b922b369}{N\+U\+M\+\_\+\+I\+N\+\_\+\+F\+I\+LE}}~1
+\item 
+\#define \mbox{\hyperlink{const_8h_a39dfeb8471febe2e42d555538ed6e1ad}{N\+U\+M\+\_\+\+O\+U\+T\+\_\+\+F\+I\+LE}}~2
+\item 
+\#define \mbox{\hyperlink{const_8h_abe3400044b818df5428cd67f37689d78}{N\+O\+T\+\_\+\+E\+N\+O\+U\+T\+H\+\_\+\+F\+I\+L\+ES}}~4
+\item 
+\#define \mbox{\hyperlink{const_8h_aba51915c87d64af47fb1cc59348961c9}{OK}}~0
+\item 
+\#define \mbox{\hyperlink{const_8h_a68eb6ded92ef28a97b3ef52d92c4a775}{S\+T\+R\+\_\+\+E\+M\+P\+TY}}~-\/1
+\item 
+\#define \mbox{\hyperlink{const_8h_aac504e148c3e090b6353a9377fcd35f0}{N\+O\+T\+\_\+\+I\+NT}}~22
+\item 
+\#define \mbox{\hyperlink{const_8h_af57d6efee3ea2e63f6f901d0f0f9d730}{T\+O\+O\+\_\+\+M\+U\+C\+H\+\_\+\+N\+U\+MS}}~-\/3
+\item 
+\#define \mbox{\hyperlink{const_8h_adcbfd88f182b85a82d29794748c20fc1}{N\+U\+M\+\_\+\+T\+O\+O\+\_\+\+B\+IG}}~-\/4
+\item 
+\#define \mbox{\hyperlink{const_8h_af775fee3875bded3f5eb64759e9d16f8}{E\+X\+I\+S\+T1\+\_\+\+E\+R\+R\+OR}}~11
+\item 
+\#define \mbox{\hyperlink{const_8h_ae4e2adfe729dc627d9fa736042c773ab}{E\+X\+I\+S\+T2\+\_\+\+E\+R\+R\+OR}}~12
+\item 
+\#define \mbox{\hyperlink{const_8h_a15068bc6e2122ff6c00b94f213333cfe}{F\+I\+L\+E\+\_\+\+E\+M\+P\+TY}}~3
+\item 
+\#define \mbox{\hyperlink{const_8h_ac717b9d6bf1b86268cb89e0c7c2ab808}{E\+R\+R\+\_\+N}}~5
+\item 
+\#define \mbox{\hyperlink{const_8h_a898606140dee9ce0adf096de00824d94}{M\+A\+X\+\_\+X}}~2147483647
+\item 
+\#define \mbox{\hyperlink{const_8h_ab29566f6eaf3523d21c1465a3ff71570}{M\+A\+X\+\_\+\+L\+E\+N\+\_\+\+S\+TR}}~256
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Store constants. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{const_8h_a2b7cf2a3641be7b89138615764d60ba3}\label{const_8h_a2b7cf2a3641be7b89138615764d60ba3}} 
+\index{const.h@{const.h}!EMPTY@{EMPTY}}
+\index{EMPTY@{EMPTY}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{EMPTY}{EMPTY}}
+{\footnotesize\ttfamily \#define E\+M\+P\+TY~-\/2}
+
+\mbox{\Hypertarget{const_8h_ac717b9d6bf1b86268cb89e0c7c2ab808}\label{const_8h_ac717b9d6bf1b86268cb89e0c7c2ab808}} 
+\index{const.h@{const.h}!ERR\_N@{ERR\_N}}
+\index{ERR\_N@{ERR\_N}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{ERR\_N}{ERR\_N}}
+{\footnotesize\ttfamily \#define E\+R\+R\+\_\+N~5}
+
+\mbox{\Hypertarget{const_8h_af775fee3875bded3f5eb64759e9d16f8}\label{const_8h_af775fee3875bded3f5eb64759e9d16f8}} 
+\index{const.h@{const.h}!EXIST1\_ERROR@{EXIST1\_ERROR}}
+\index{EXIST1\_ERROR@{EXIST1\_ERROR}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{EXIST1\_ERROR}{EXIST1\_ERROR}}
+{\footnotesize\ttfamily \#define E\+X\+I\+S\+T1\+\_\+\+E\+R\+R\+OR~11}
+
+\mbox{\Hypertarget{const_8h_ae4e2adfe729dc627d9fa736042c773ab}\label{const_8h_ae4e2adfe729dc627d9fa736042c773ab}} 
+\index{const.h@{const.h}!EXIST2\_ERROR@{EXIST2\_ERROR}}
+\index{EXIST2\_ERROR@{EXIST2\_ERROR}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{EXIST2\_ERROR}{EXIST2\_ERROR}}
+{\footnotesize\ttfamily \#define E\+X\+I\+S\+T2\+\_\+\+E\+R\+R\+OR~12}
+
+\mbox{\Hypertarget{const_8h_a15068bc6e2122ff6c00b94f213333cfe}\label{const_8h_a15068bc6e2122ff6c00b94f213333cfe}} 
+\index{const.h@{const.h}!FILE\_EMPTY@{FILE\_EMPTY}}
+\index{FILE\_EMPTY@{FILE\_EMPTY}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{FILE\_EMPTY}{FILE\_EMPTY}}
+{\footnotesize\ttfamily \#define F\+I\+L\+E\+\_\+\+E\+M\+P\+TY~3}
+
+\mbox{\Hypertarget{const_8h_aabf4f709c8199e41cf279c77112345fe}\label{const_8h_aabf4f709c8199e41cf279c77112345fe}} 
+\index{const.h@{const.h}!MAX\_LEN@{MAX\_LEN}}
+\index{MAX\_LEN@{MAX\_LEN}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_LEN}{MAX\_LEN}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+L\+EN~10}
+
+\mbox{\Hypertarget{const_8h_ab29566f6eaf3523d21c1465a3ff71570}\label{const_8h_ab29566f6eaf3523d21c1465a3ff71570}} 
+\index{const.h@{const.h}!MAX\_LEN\_STR@{MAX\_LEN\_STR}}
+\index{MAX\_LEN\_STR@{MAX\_LEN\_STR}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_LEN\_STR}{MAX\_LEN\_STR}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+L\+E\+N\+\_\+\+S\+TR~256}
+
+\mbox{\Hypertarget{const_8h_a898606140dee9ce0adf096de00824d94}\label{const_8h_a898606140dee9ce0adf096de00824d94}} 
+\index{const.h@{const.h}!MAX\_X@{MAX\_X}}
+\index{MAX\_X@{MAX\_X}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_X}{MAX\_X}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+X~2147483647}
+
+\mbox{\Hypertarget{const_8h_abe3400044b818df5428cd67f37689d78}\label{const_8h_abe3400044b818df5428cd67f37689d78}} 
+\index{const.h@{const.h}!NOT\_ENOUTH\_FILES@{NOT\_ENOUTH\_FILES}}
+\index{NOT\_ENOUTH\_FILES@{NOT\_ENOUTH\_FILES}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{NOT\_ENOUTH\_FILES}{NOT\_ENOUTH\_FILES}}
+{\footnotesize\ttfamily \#define N\+O\+T\+\_\+\+E\+N\+O\+U\+T\+H\+\_\+\+F\+I\+L\+ES~4}
+
+\mbox{\Hypertarget{const_8h_aac504e148c3e090b6353a9377fcd35f0}\label{const_8h_aac504e148c3e090b6353a9377fcd35f0}} 
+\index{const.h@{const.h}!NOT\_INT@{NOT\_INT}}
+\index{NOT\_INT@{NOT\_INT}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{NOT\_INT}{NOT\_INT}}
+{\footnotesize\ttfamily \#define N\+O\+T\+\_\+\+I\+NT~22}
+
+\mbox{\Hypertarget{const_8h_a99ebb918c3bae39d675f4d82b922b369}\label{const_8h_a99ebb918c3bae39d675f4d82b922b369}} 
+\index{const.h@{const.h}!NUM\_IN\_FILE@{NUM\_IN\_FILE}}
+\index{NUM\_IN\_FILE@{NUM\_IN\_FILE}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_IN\_FILE}{NUM\_IN\_FILE}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+I\+N\+\_\+\+F\+I\+LE~1}
+
+\mbox{\Hypertarget{const_8h_a39dfeb8471febe2e42d555538ed6e1ad}\label{const_8h_a39dfeb8471febe2e42d555538ed6e1ad}} 
+\index{const.h@{const.h}!NUM\_OUT\_FILE@{NUM\_OUT\_FILE}}
+\index{NUM\_OUT\_FILE@{NUM\_OUT\_FILE}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_OUT\_FILE}{NUM\_OUT\_FILE}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+O\+U\+T\+\_\+\+F\+I\+LE~2}
+
+\mbox{\Hypertarget{const_8h_adcbfd88f182b85a82d29794748c20fc1}\label{const_8h_adcbfd88f182b85a82d29794748c20fc1}} 
+\index{const.h@{const.h}!NUM\_TOO\_BIG@{NUM\_TOO\_BIG}}
+\index{NUM\_TOO\_BIG@{NUM\_TOO\_BIG}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_TOO\_BIG}{NUM\_TOO\_BIG}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+T\+O\+O\+\_\+\+B\+IG~-\/4}
+
+\mbox{\Hypertarget{const_8h_aba51915c87d64af47fb1cc59348961c9}\label{const_8h_aba51915c87d64af47fb1cc59348961c9}} 
+\index{const.h@{const.h}!OK@{OK}}
+\index{OK@{OK}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{OK}{OK}}
+{\footnotesize\ttfamily \#define OK~0}
+
+\mbox{\Hypertarget{const_8h_a68eb6ded92ef28a97b3ef52d92c4a775}\label{const_8h_a68eb6ded92ef28a97b3ef52d92c4a775}} 
+\index{const.h@{const.h}!STR\_EMPTY@{STR\_EMPTY}}
+\index{STR\_EMPTY@{STR\_EMPTY}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{STR\_EMPTY}{STR\_EMPTY}}
+{\footnotesize\ttfamily \#define S\+T\+R\+\_\+\+E\+M\+P\+TY~-\/1}
+
+\mbox{\Hypertarget{const_8h_af57d6efee3ea2e63f6f901d0f0f9d730}\label{const_8h_af57d6efee3ea2e63f6f901d0f0f9d730}} 
+\index{const.h@{const.h}!TOO\_MUCH\_NUMS@{TOO\_MUCH\_NUMS}}
+\index{TOO\_MUCH\_NUMS@{TOO\_MUCH\_NUMS}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{TOO\_MUCH\_NUMS}{TOO\_MUCH\_NUMS}}
+{\footnotesize\ttfamily \#define T\+O\+O\+\_\+\+M\+U\+C\+H\+\_\+\+N\+U\+MS~-\/3}
+
+\mbox{\Hypertarget{const_8h_acd4a2dee55f5359c0389baab37c2f468}\label{const_8h_acd4a2dee55f5359c0389baab37c2f468}} 
+\index{const.h@{const.h}!WHERE@{WHERE}}
+\index{WHERE@{WHERE}!const.h@{const.h}}
+\doxysubsubsection{\texorpdfstring{WHERE}{WHERE}}
+{\footnotesize\ttfamily \#define W\+H\+E\+RE~111}
+

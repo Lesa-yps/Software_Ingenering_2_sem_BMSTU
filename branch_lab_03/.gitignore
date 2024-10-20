@@ -1,0 +1,7 @@
+<<<<<<< .gitignore
+*.o
+*.exe
+=======
+*.o
+*.Exe
+>>>>>>> .gitignore
